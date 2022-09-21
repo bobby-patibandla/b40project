@@ -11,4 +11,4 @@
     - debug: var=inventory_hostname
     - debug: var=groups
     - debug: var=group_names
-    - debug: var=hostvars
+    # - debug: var=hostvars
