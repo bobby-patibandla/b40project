@@ -30,3 +30,5 @@ vi ansible/03.variables.yml
 ansible-playbook ansible/03.variables.yml
 
 ansible-playbook ansible/03.variables.yml -e "variable1='Commandline Variable'"
+
+ansible-playbook ansible/06.import_playbooks.yml --tag ubuntu
