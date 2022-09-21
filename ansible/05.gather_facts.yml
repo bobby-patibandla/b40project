@@ -11,4 +11,7 @@
     - debug: var=inventory_hostname
     - debug: var=groups
     - debug: var=group_names
+    - name: print IPv4 Address
+      debug:
+        msg: "IPv4 address: {{ ansible_default_ipv4.address }}"
     # - debug: var=hostvars
