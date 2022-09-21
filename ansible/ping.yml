@@ -4,3 +4,6 @@
   - name: Pinging servers
     ansible.builtin.ping:
   - debug: msg="This is first Playbook"
+- hosts: web
+  tasks:
+    - debug: msg="Hello Webserver"
