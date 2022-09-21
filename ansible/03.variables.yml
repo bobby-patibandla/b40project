@@ -3,7 +3,7 @@
   # vars_files:
   #  - variables.yml
   vars:
-    variable1: "PlayBookValue"
+    variable1: "Play Book Value"
   tasks:
     - name: Variable Value
       debug: msg="Value is {{ variable1 }}"

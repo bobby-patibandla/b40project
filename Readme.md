@@ -23,3 +23,10 @@ ansible-playbook ansible/01.ping.yml -l web
 ansible-playbook ansible/02.shell.yml
 
 ansible-playbook ansible/01.ping.yml --list-hosts
+
+ansible-playbook ansible/03.variables.yml
+
+vi ansible/03.variables.yml
+ansible-playbook ansible/03.variables.yml
+
+ansible-playbook ansible/03.variables.yml -e "variable1='Commandline Variable'"
