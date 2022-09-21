@@ -1,5 +1,5 @@
 --- # Testing all the servers connectivity
-- hosts: webserver
+- hosts: all
   tasks:
   - name: Pinging servers
     ansible.builtin.ping:
