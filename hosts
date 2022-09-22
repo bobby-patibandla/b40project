@@ -1,0 +1,9 @@
+[webserver]
+web ansible_host=172.20.10.81
+
+[appserver]
+app ansible_host=172.20.10.164
+
+[centos]
+web
+app
