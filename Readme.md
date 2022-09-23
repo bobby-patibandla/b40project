@@ -2,7 +2,7 @@
 
 ### Setup Ansible Environment using Terraform
 
-    [**01. Ansible Setup **](1.Ansible-Setup.md)
+    [**01. Ansible Setup **](https://gitlab.com/rns-devops/ansible-latest-resources/-/blob/master/1.Ansible-Setup.md)
 
 # Step-2:
 
