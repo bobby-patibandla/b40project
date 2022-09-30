@@ -8,9 +8,14 @@
    tasks:
    - name: If Os is RedHat install Http
      yum:
-         name: httpd
+         name: git
          state: present
      when: ansible_os_family == 'RedHat'
+   - name: If Os is RedHat install Http
+     apt:
+         name: git
+         state: present
+     when: ansible_os_family == 'Ubuntu'
 
 - hosts: all
   vars:
@@ -20,5 +25,6 @@
     - name: create file for user
       file:
         path: /home/{{ user }}/myfile
-        state: touch
+        state: absent
       when: create_user_file
+
