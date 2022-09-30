@@ -6,11 +6,16 @@
    connection: ssh
    gather_facts: yes
    tasks:
-   - name: If Os is RedHat install Http
+   - name: If Os is RedHat install git
      yum:
-         name: httpd
+         name: git
          state: present
      when: ansible_os_family == 'RedHat'
+   - name: If Os is Ubuntu install git
+     apt:
+         name: git
+         state: present
+     when: ansible_os_family == 'Ubuntu'
 
 - hosts: all
   vars:
