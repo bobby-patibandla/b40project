@@ -25,5 +25,6 @@
     - name: create file for user
       file:
         path: /home/{{ user }}/myfile
-        state: touch
+        state: present
       when: create_user_file
+

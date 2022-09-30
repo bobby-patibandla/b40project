@@ -1,12 +1,14 @@
 - name: Find the list of file in a directory
-  hosts: all
+  hosts: app
   become: yes
   tasks:
     - name: Find all the files
       find:
-        paths: /usr/share/nginx/html/
+        paths: /home/ansible/
         file_type: any
       register: OUT
+    - name: Print OUT 
+      debug: var={{ OUT }}
 
     - name: Delete the files
       file:

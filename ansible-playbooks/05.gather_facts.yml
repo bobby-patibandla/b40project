@@ -2,11 +2,11 @@
 - hosts: centos
   tasks:
     - name: Kernel
-      debug: msg="Kernel: {{ ansible_kernel }}"
+      debug: msg="Kernel:- {{ ansible_kernel }}"
     - name: Hostname
-      debug: msg="Hostname: {{ ansible_hostname }}"
+      debug: msg="Hostname- {{ ansible_hostname }}"
     - name: Distribution
-      debug: msg="Distribution: {{ ansible_distribution }}"
+      debug: msg="Distribution- {{ ansible_distribution }}"
     - debug: var=ansible_architecture
     - debug: var=inventory_hostname
     - debug: var=groups
